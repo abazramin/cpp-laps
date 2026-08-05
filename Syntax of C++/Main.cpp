@@ -4,13 +4,19 @@ using namespace std;
 
 int main(){
 
-      int age ;
-
-      cout << "Enter The Age" << endl;
+      string yourname;
+      int age;
+      bool ismearid;
+      // Taking input from user
+      cout << "Enter The Name" << endl;
+      cin >> yourname;
+      cout << "Enter your Age" << endl;
       cin >> age;
+      cout << "Are you a mechatronics engineer? (1 for yes, 0 for no)" << endl;
+      cin >> ismearid;
+      // Displaying the name and age
+      cout << "your Name is "<< yourname << " and your Age is " << age << " and your mechatronics engineer status is " << ismearid << endl;
 
 
-
-      cout << "your Age is "<< age << endl;
-            return 0;
+      return 0;
 }
