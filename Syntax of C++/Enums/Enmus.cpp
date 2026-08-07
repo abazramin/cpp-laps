@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 enum OurColor {Red , Blue , Yallow , Black};
@@ -13,6 +14,10 @@ int main() {
 
       colors = OurColor::Red;
       
+      string num = "23456";
+
+      int n = stoi(num);
+
 
 
       cout << colors << endl;

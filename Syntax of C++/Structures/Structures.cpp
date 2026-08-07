@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+enum enGender {Male , Female};
 
 int main() {
 
@@ -40,7 +41,7 @@ int main() {
     person1.country = "sudan";
     person1.MonthlySalary = 5600;
     person1.YearlySalary = 5600 * 12;
-    person1.Gender = 'M';
+    person1.Gender = enGender::Male;
     person1.isMeried = false; 
     person1.contact.Phone = "01111111111";
     person1.contact.Adress = "al baha";
