@@ -2,6 +2,12 @@
 #include <cmath>
 using namespace std;
 
+float TaskDurationInSeconds(float numberOfDay , float numberOfHour , float numberOfMintus , float numberOfSecound){
+      float totalOfSecounds = (numberOfDay * 24* 60 * 60) + (numberOfHour * 60 * 60 ) + (numberOfMintus * 60) + (numberOfSecound);
+      return totalOfSecounds;
+}
+
+
 int main (){
 
 
@@ -22,7 +28,7 @@ int main (){
       cout << "Write Your number of Secound task " << endl;
       cin >> numberOfSecound;
 
-      float totalOfSecounds = (numberOfDay * 24* 60 * 60) + (numberOfHour * 60 * 60 ) + (numberOfMintus * 60) + (numberOfSecound);
+      float totalOfSecounds = TaskDurationInSeconds(numberOfDay , numberOfHour , numberOfMintus , numberOfSecound);
 
 
       cout << " The Result is : " << totalOfSecounds << " Secound" << endl;

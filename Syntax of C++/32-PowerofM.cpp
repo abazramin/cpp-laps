@@ -2,6 +2,14 @@
 #include <cmath>
 using namespace std;
 
+
+
+int PowerofM(int N , int M){
+      float result = pow(N,M);
+      return round(result);
+}     
+
+
 int main (){
 
       int N , M;
@@ -11,10 +19,10 @@ int main (){
       cout << "Enter Value of N , M " << endl;
       cin >> M;
 
-      float result = pow(N,M);
+      int result = PowerofM(N,M);
 
 
-      cout << "The Result is : " << round(result) << endl;
+      cout << "The Result is : " << result << endl;
 
       return 0;
 }
