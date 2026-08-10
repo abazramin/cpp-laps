@@ -2,8 +2,7 @@
 #include <cmath>
 using namespace std;
 
-int main (){
-
+void PowerOfNumbers(){
       int num;
       cout << "Enter The Number " << endl;
       cin >> num;
@@ -15,6 +14,11 @@ int main (){
 
 
       cout << "Result is : " << num1 << endl << num2 << endl << num3 << endl;
+}
+
+int main (){
+
+    PowerOfNumbers();
 
       return 0;
 }
