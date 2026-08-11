@@ -2,24 +2,24 @@
 #include <cmath>
 using namespace std;
 
-void TaskDurationInSeconds(float totalSecound){
+void TaskDurationInSeconds(int totalSecound){
       
 
-      float reminder;
-      float  SecoundPerDay = (24 * 60 * 60);
-      float  SecoundPerHours = (60 * 60);
-      float  SecoundPerMinetus = (60);
+      int reminder;
+      int  SecoundPerDay = (24 * 60 * 60);
+      int  SecoundPerHours = (60 * 60);
+      int  SecoundPerMinetus = (60);
 
-      float totalDay = floor(totalSecound / SecoundPerDay);
-      reminder = (totalSecound / SecoundPerDay);
+      int totalDay = floor(totalSecound / SecoundPerDay);
+      reminder = (totalSecound % SecoundPerDay);
 
-      float totalHours = floor(totalSecound / SecoundPerHours);
-      reminder = reminder / SecoundPerHours;
+      int totalHours = floor(totalSecound / SecoundPerHours);
+      reminder = (reminder % SecoundPerHours);
 
-      float totalMintus = floor(totalSecound / SecoundPerMinetus);
-      reminder = reminder / SecoundPerMinetus;
+      int totalMintus = floor(totalSecound / SecoundPerMinetus);
+      reminder = (reminder % SecoundPerMinetus);
 
-      float totalSecounds = reminder;
+      int totalSecounds = reminder;
 
 
 
@@ -31,7 +31,7 @@ void TaskDurationInSeconds(float totalSecound){
 
 int main() {
       // here we will convert the total secound into days, hours, minutes
-      float totalSecound;
+      int totalSecound;
       cout << "Enter Total Of Secound" << endl;
       cin >> totalSecound;
 
