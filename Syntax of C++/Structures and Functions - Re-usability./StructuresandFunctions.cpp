@@ -15,8 +15,8 @@ struct InfoPerson
 };
 
 
-void ResetInfo(InfoPerson &person) {
-     cout << "Resetting InfoPerson..." << endl;
+void ReadingInfo(InfoPerson &person) {
+     cout << "Reading InfoPerson..." << endl;
 
       cout << "Enter name: ";
       cin >> person.name;
@@ -51,17 +51,17 @@ void PrintInfo(InfoPerson &person) {
 int main() {
       InfoPerson person;
 
-      ResetInfo(person);
+      ReadingInfo(person);
       PrintInfo(person);
 
 
       InfoPerson person2;
-      ResetInfo(person2);     
+      ReadingInfo(person2);     
       PrintInfo(person2);
 
 
       InfoPerson Person3;
-      ResetInfo(Person3);
+      ReadingInfo(Person3);
       PrintInfo(Person3);
 
     return 0;
