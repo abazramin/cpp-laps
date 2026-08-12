@@ -18,24 +18,24 @@ struct InfoPerson
 void ReadingInfo(InfoPerson &person) {
      cout << "Reading InfoPerson..." << endl;
 
-      cout << "Enter name: ";
+      cout << "Enter name: " << endl;;
       cin >> person.name;
-      cout << "Enter age: ";  
+      cout << "Enter age: " << endl;  
       cin >> person.age;
-      cout << "Enter city: ";
+      cout << "Enter city: " << endl;
       cin >> person.city;
-      cout << "Enter country: ";  
+      cout << "Enter country: " << endl;  
       cin >> person.country;
-      cout << "Enter address: ";  
+      cout << "Enter address: "<< endl;  
       cin >> person.address;
-      cout << "Enter gender (M/F): ";  
+      cout << "Enter gender (M/F): "<< endl;  
       cin >> person.gender;
       cout << "Enter marital status (true/false): ";  
       cin >> person.isMarried;
 }
 
 
-void PrintInfo(InfoPerson &person) {
+void PrintInfo(InfoPerson person) {
 
       cout << "\n* * * * * * * * * * * * * *" << endl;
       cout << "Name: " << person.name << endl;
@@ -53,16 +53,5 @@ int main() {
 
       ReadingInfo(person);
       PrintInfo(person);
-
-
-      InfoPerson person2;
-      ReadingInfo(person2);     
-      PrintInfo(person2);
-
-
-      InfoPerson Person3;
-      ReadingInfo(Person3);
-      PrintInfo(Person3);
-
     return 0;
 }
