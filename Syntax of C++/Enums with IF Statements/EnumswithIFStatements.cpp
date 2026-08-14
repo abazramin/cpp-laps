@@ -5,8 +5,8 @@ using namespace std;
 enum enCountries {Egypt = 1, SaudiArabia = 2, UAE = 3, Kuwait = 4, Qatar = 5, Bahrain = 6, Oman = 7};
 
 
-int main() {
 
+void printCountry(){
       cout << "Enter your country code (1-7): \n";
       cout << "1: Egypt" << endl;
       cout << "2: Saudi Arabia" << endl;
@@ -15,28 +15,52 @@ int main() {
       cout << "5: Qatar" << endl;
       cout << "6: Bahrain" << endl;
       cout << "7: Oman" << endl;
+}
+
+int main() {
+
+      printCountry();
       
       int countryCode;
       cin >> countryCode;
       enCountries country = (enCountries)countryCode;
 
-      if (country == Egypt) {
-            cout << "You are from Egypt." << endl;
-      } else if (country == SaudiArabia) {
-            cout << "You are from Saudi Arabia." << endl;
-      } else if (country == UAE) {
-            cout << "You are from UAE." << endl;
-      } else if (country == Kuwait) {
-            cout << "You are from Kuwait." << endl;
-      } else if (country == Qatar) {
-            cout << "You are from Qatar." << endl;
-      } else if (country == Bahrain) {
-            cout << "You are from Bahrain." << endl;
-      } else if (country == Oman) {
-            cout << "You are from Oman." << endl;
-       } else {
+      switch (country)
+      {
+      case enCountries::Egypt:
+            /* code */
+            cout << "Yore are from Egypt." << endl;
+            break;
+      case enCountries::SaudiArabia:
+            /* code */
+            cout << "Yore are from Saudi Arabia." << endl;
+            break;
+      case enCountries::UAE:
+            /* code */
+            cout << "Yore are from UAE." << endl;
+            break;
+      case enCountries::Kuwait:
+            /* code */
+            cout << "Yore are from Kuwait." << endl;
+            break;
+      case enCountries::Qatar:            
+            /* code */
+            cout << "Yore are from Qatar." << endl;
+            break;
+      case enCountries::Bahrain:
+            /* code */
+            cout << "Yore are from Bahrain." << endl;
+            break;
+      case enCountries::Oman:
+            /* code */
+            cout << "Yore are from Oman." << endl;
+            break;
+      default:
             cout << "Invalid country code." << endl;
+            break;
       }
+
+
 
     return 0;
 }
