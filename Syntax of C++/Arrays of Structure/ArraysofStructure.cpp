@@ -12,7 +12,7 @@ struct PersonInformation
 };
 
 void ReadingInfo(PersonInformation &person) {
-     cout << "Reading InfoPerson..." << endl;
+     cout << "Reading InfoPerson...  " << endl;
 
       cout << "Enter first name: " << endl;;
       cin >> person.firstName;
@@ -34,21 +34,45 @@ void PrintInfo(PersonInformation person) {
       cout << "* * * * * * * * * * * * * *" << endl;
 }
 
-void ReadPersonsInfo(PersonInformation person[2]){
-      ReadingInfo(person[0]);
-      ReadingInfo(person[1]);
+void ReadPersonsInfo(PersonInformation person[100] , int &lenght){
+
+
+      cout << "how person you have , you need count " << endl;
+      cin >> lenght;
+
+
+      for (int i = 0; i <= lenght - 1; i++)
+      {
+            /* code */
+            cout << "Plase Enter Person's" << i + 1 << endl; 
+            ReadingInfo(person[i]);
+      }
+      
+
+
+      
 }
 
-void PrintPersonsInfo(PersonInformation person[2]){
-      PrintInfo(person[0]);
-      PrintInfo(person[1]);
+void PrintPersonsInfo(PersonInformation person[100] , int lenght){
+       for (int i = 0; i <= lenght - 1; i++)
+      {
+            /* code */
+            cout << "Print Info of Person's" << i + 1 << endl; 
+            PrintInfo(person[i]);
+      }
 }
 
 int main() {
 
-      PersonInformation Person[2];
-      ReadPersonsInfo(Person);
-      PrintPersonsInfo(Person);
+      PersonInformation Person[100];
+      int lenght;
+
+
+      
+
+
+      ReadPersonsInfo(Person , lenght);
+      PrintPersonsInfo(Person , lenght);
 
       return 0;
 }

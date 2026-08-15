@@ -10,6 +10,19 @@ int PowerofM(int N , int M){
 }     
 
 
+int PowerofMs(int N, int M)
+{
+    int result = 1;
+
+    for (int i = 1; i <= M; i++)
+    {
+        result *= N;
+    }
+
+    return result;
+}
+
+
 int main (){
 
       int N , M;
