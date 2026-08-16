@@ -5,6 +5,16 @@ using namespace std;
 
 
 int PowerofM(int N , int M){
+
+    while (N <= 0)
+    {
+        /* code */
+        cout << "Must Be Enter Postive Number !" <<endl;
+        cin >> N;
+    }
+    
+
+
       float result = pow(N,M);
       return round(result);
 }     
