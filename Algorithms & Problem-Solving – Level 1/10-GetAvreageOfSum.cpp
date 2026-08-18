@@ -30,7 +30,7 @@ stSumOfNumbers ReadNumbers(){
 }
 
 
-int SumOfNumbers(stSumOfNumbers numbers){
+int SumOfNumbers(stSumOfNumbers & numbers){
 
       int result = numbers.number1 + numbers.number2 + numbers.number3;
 
@@ -48,7 +48,7 @@ void PrintSumOfNumebrs(int result){
 
 
 int main(){
-      
+
       PrintSumOfNumebrs(AvreageOfSums(ReadNumbers()));
 
       return 0;
