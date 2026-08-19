@@ -2,24 +2,22 @@
 using namespace std;
 
 
-void PrintOddNumbersfrom1toN(){
+void PrintNumebrNTo1(){
 
       int N;
-
-      cout << "Enter The Number : " << endl;
+      
+      cout << "What Number would be count ? Enter The Number " ;
       cin >> N;
 
       while (N <= 0)
       {
-            /* code */
             cout << "Must Be Enter Postive Number !" <<endl;
             cin >> N;
       }
       
-
-      for (int i = 1; i <= N; i += 2)
+      for (int i = N; i >= 1; i--)
       {
-            cout << i << endl;
+            cout << "\n" <<i << endl;
       }
       
 }
@@ -27,9 +25,9 @@ void PrintOddNumbersfrom1toN(){
 
 int main(){
 
+    
 
-      PrintOddNumbersfrom1toN();
+      PrintNumebrNTo1();
 
-      
       return 0;
 }

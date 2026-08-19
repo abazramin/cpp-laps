@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
-void PrintOddNumbersfrom1toN(){
-
+int ReadNumber(){
       int N;
 
       cout << "Enter The Number : " << endl;
@@ -11,24 +9,31 @@ void PrintOddNumbersfrom1toN(){
 
       while (N <= 0)
       {
-            /* code */
             cout << "Must Be Enter Postive Number !" <<endl;
             cin >> N;
       }
-      
+
+      return N;
+}
+
+int SumOddNumbersfrom1toN(int N){
+      int sum = 0;
 
       for (int i = 1; i <= N; i += 2)
       {
-            cout << i << endl;
+            sum += i;
       }
-      
+      return sum;     
 }
 
+void PrintSumODDNumber(int result ){
+      cout << "The Sum Of Number is : " << result << endl; 
+}
 
 int main(){
 
 
-      PrintOddNumbersfrom1toN();
+      PrintSumODDNumber(SumOddNumbersfrom1toN(ReadNumber()));
 
       
       return 0;
