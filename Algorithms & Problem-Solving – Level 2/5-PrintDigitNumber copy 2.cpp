@@ -15,23 +15,26 @@ int ReadPositiveNumber(string Message)
 
 
 
-void reversDigitNumber(int Number){
+int SumDigitNumber(int Number){
 
       int revers = 0;
+      int sum  = 0;
 
       while (Number > 0)
       {
             revers =  Number % 10; 
             Number = Number / 10;
-
-            cout << revers ;
+            //
+            sum += revers;
       }    
+
+      return sum ;
 }
 
 
 
 int main(){
 
-      reversDigitNumber(ReadPositiveNumber("Enter The Positive Number "));
+      cout << "\n " << SumDigitNumber(ReadPositiveNumber("Enter The Positive Number "));
       return 0;
 }
