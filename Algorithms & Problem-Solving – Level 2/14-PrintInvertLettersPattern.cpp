@@ -33,9 +33,3 @@ int main(){
       return 0;
 }
 
-void PrintLettersPattern(int number){
-      for (int i = 65 ;i <= 65 + number - 1;  i++)
-      {
-            cout << char(i) << " ";  
-      }
-}
