@@ -4,21 +4,24 @@ using namespace std;
 
 
 
-void OneNumbers(int &n){
-    n = 7000;
-    cout << "The Numebr is : " << n <<  endl;
+
+
+string Reverces(string name){
+
+    string word = "";
+
+    for (int i = name.length() - 1; i >= 0 ; i--)
+    {
+        word += name[i];
+    }
+    
+    return word;
 }
 
 
 int main() {
 
-    int x =10;
-
-    OneNumbers(x);
-
-
-    cout << endl << &x << endl;
-
+    cout << Reverces("Abazr") << endl;
 
     return 0;
 }
