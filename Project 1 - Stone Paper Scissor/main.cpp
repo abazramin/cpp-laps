@@ -2,6 +2,18 @@
 #include <string>
 using namespace std;
 
+int RandomNumber(int From, int To)
+{
+    int randNum = rand() % (To - From + 1) + From;
+    return randNum;  
+}
+
+struct Counter
+{
+    int PlayerWins = 0;
+    int ComputerWins = 0;
+    int Draws = 0;
+};
 
 
 enum enPlayers { Player = 1 , Computer = 2 , Draw = 3};
@@ -13,21 +25,15 @@ enRole ReadPlayerChoice()
     int Choice;
 
     cout << "Choose your choice:\n";
-    cout << "1. Stone\n";
-    cout << "2. Paper\n";
-    cout << "3. Scissor\n";
+    cout << "1. Stone ";
+    cout << "2. Paper ";
+    cout << "3. Scissor ";
     cin >> Choice;
 
     return (enRole)Choice;
 }
 
-int RandomNumber(int From, int To)
-{
-    int randNum = rand() % (To - From + 1) + From;
-    return randNum;  
-}
-
-enRole ComputerChoice()
+enRole GetComputerChoice()
 {
     int Choice = RandomNumber(1,3);
 
@@ -74,27 +80,22 @@ enPlayers SelectWinner(enRole PlayerChoice, enRole ComputerChoice)
     return enPlayers::Draw;
 }
 
-enRole GetComputerChoice()
+void PrintWinner(Counter c)
 {
-    int Choice = RandomNumber(1,3);
+    enPlayers Winner;
 
-    return (enRole)Choice;
-}
-
-void PrintWinner(enPlayers Winner)
-{
     switch (Winner)
     {
     case enPlayers::Player:
-        cout << "Player Wins!" << endl;
+        cout << "Player Wins! " << c.PlayerWins << endl;
         break;
 
     case enPlayers::Computer:
-        cout << "Computer Wins!" << endl;
+        cout << "Computer Wins! " << c.ComputerWins << endl;
         break;
 
     case enPlayers::Draw:
-        cout << "Draw!" << endl;
+        cout << "Draw! " << c.Draws  << endl;
         break;
     }
 }
@@ -110,34 +111,45 @@ int ReadPositiveNumber(string Message)
 
     return Number;  
 }
+// i take the lenght of game , that mean i will run game == length
+void PlayRounds(int &lenght){
 
-void ReadCountOfRound(int arr[100] , int &lenght){
+    Counter c;
 
+    c.PlayerWins = 0;
+    c.ComputerWins = 0;
+    c.Draws = 0;
+
+    
 
       for (int i = 0; i <= lenght - 1 ; i++)
       {
-            ReadPlayerChoice();
+         enPlayers winner =  SelectWinner(ReadPlayerChoice() , GetComputerChoice());
+
+         if (winner == enPlayers::Player)
+         {
+            c.PlayerWins++;
+         } else if (winner == enPlayers::Computer){
+            c.ComputerWins++;
+         } else {
+            c.Draws++;
+         }
+         
       }
       
+      PrintWinner(c);
  }
 
-void PrintArrayData(int arr[100] , int lenght){
 
-      for (int i = 0; i < lenght; i++)
-      {
-            /* code */
-            cout << "Number is " << i + 1 << " = " << arr[i] << endl;
-      }
-      
- }
 
+void StartGame(){
+      int lenght = ReadPositiveNumber("Enter How Many You Want to Play ");
+      PlayRounds(lenght);
+}
 
 int main(){
 
-      srand(time(0));
+    srand(time(0));
 
-      int round[100];
-      int lenght = ReadPositiveNumber("Enter How Many You Want to Play ");
-
-      ReadCountOfRound(round , lenght);
+    StartGame();
 }
