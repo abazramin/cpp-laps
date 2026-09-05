@@ -27,7 +27,7 @@ char GetGradeLetter(int Grade)
     else if (Grade >= 60)
         return 'D';
     else if (Grade >= 50)
-        return 'E';
+        return 'F';
     else
         return 'F';  
 }
