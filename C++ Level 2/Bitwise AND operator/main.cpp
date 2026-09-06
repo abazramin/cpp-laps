@@ -7,7 +7,9 @@ int  main()
 {
       int a = 5;
       int b = 3;
-
+      // 5 in binary is 0101
+      // 3 in binary is 0011
+      // Bitwise AND, OR, XOR, NOT, Left shift, Right shift
       cout << "a & b = " << (a & b) << endl; // Bitwise AND
       cout << "a | b = " << (a | b) << endl; // Bitwise OR
       cout << "a ^ b = " << (a ^ b) << endl; // Bitwise XOR
