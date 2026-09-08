@@ -5,6 +5,9 @@ using namespace std;
 
 
 
+void function1(int &a){
+    ++a;
+}
 
 string Reverces(string name){
 
@@ -21,7 +24,14 @@ string Reverces(string name){
 
 int main() {
 
-    cout << Reverces("Abazr") << endl;
+    int a = 10;
+
+
+    function1(a);
+
+
+
+    cout << a << endl;
 
     return 0;
 }
