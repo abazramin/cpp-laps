@@ -25,10 +25,15 @@ int main(){
 
       vector<int>::iterator itr;
 
-
       for (itr = nums.begin(); nums.end() != itr; itr++)
       {
             cout << *itr << endl;
+      }
+
+
+      for (itr = nums.begin(); nums.end() != itr; itr++)
+      {
+            cout << &(*itr) << endl;
       }
       
 
