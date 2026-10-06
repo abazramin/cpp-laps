@@ -43,11 +43,11 @@ vector<string> SplitString(string S1, string Delim)
 
 int main()
 {
-    vector<string> vSplting = SplitString(ReadString(), " ");
+    vector<string> vSplting = SplitString(ReadString(), " : ");
 
     cout << "Split size : " << vSplting.size() << endl;
 
-    for (const string& s : vSplting)
+    for (const string &s : vSplting)
     {
         cout << s << endl;
     }

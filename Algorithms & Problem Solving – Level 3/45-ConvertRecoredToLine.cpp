@@ -15,7 +15,7 @@ sClient ReadNewClient()
 {
       sClient Client;
       cout << "Enter Account Number? ";
-      getline(cin, Client.AccountNumber);
+      getline(cin >> ws, Client.AccountNumber);
       cout << "Enter PinCode? ";
       getline(cin, Client.PinCode);
       cout << "Enter Name? ";
