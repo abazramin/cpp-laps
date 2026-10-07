@@ -61,6 +61,7 @@ void AddNewClient()
       Client = ReadNewClient();
       AddDataLineToFile(ClientsFileName, ConvertRecordToLine(Client));
 }
+
 void AddClients()
 {
       char AddMore = 'Y';

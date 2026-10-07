@@ -8,22 +8,22 @@ The main goal of this repository is **practice, experimentation, and continuous 
 
 This repository helps me practice and strengthen my understanding of:
 
-* C++ fundamentals
-* Variables and data types
-* Conditions and loops
-* Functions
-* Arrays
-* Strings
-* Vectors
-* Structs
-* Enums
-* References and pointers
-* File handling
-* Matrices
-* Random number generation
-* Problem solving and algorithms
-* Code refactoring
-* Small console-based projects
+- C++ fundamentals
+- Variables and data types
+- Conditions and loops
+- Functions
+- Arrays
+- Strings
+- Vectors
+- Structs
+- Enums
+- References and pointers
+- File handling
+- Matrices
+- Random number generation
+- Problem solving and algorithms
+- Code refactoring
+- Small console-based projects
 
 ## 📚 Topics Covered
 
@@ -31,14 +31,14 @@ This repository helps me practice and strengthen my understanding of:
 
 Practice with:
 
-* `if / else`
-* `switch`
-* `for / while / do-while`
-* Functions
-* Arrays
-* Strings
-* Input validation
-* Mathematical operations
+- `if / else`
+- `switch`
+- `for / while / do-while`
+- Functions
+- Arrays
+- Strings
+- Input validation
+- Mathematical operations
 
 ### Functions
 
@@ -73,16 +73,16 @@ struct stGameInfo
 
 The repository contains several exercises involving:
 
-* One-dimensional arrays
-* Two-dimensional arrays
-* Matrix printing
-* Matrix comparison
-* Row and column calculations
-* Matrix sums
-* Identity matrices
-* Palindrome matrices
-* Sparse matrices
-* Searching inside matrices
+- One-dimensional arrays
+- Two-dimensional arrays
+- Matrix printing
+- Matrix comparison
+- Row and column calculations
+- Matrix sums
+- Identity matrices
+- Palindrome matrices
+- Sparse matrices
+- Searching inside matrices
 
 Example:
 
@@ -96,11 +96,11 @@ Example:
 
 Practice with:
 
-* Counting characters
-* Counting uppercase/lowercase letters
-* Searching for characters
-* String manipulation
-* Character validation
+- Counting characters
+- Counting uppercase/lowercase letters
+- Searching for characters
+- String manipulation
+- Character validation
 
 Example:
 
@@ -132,10 +132,10 @@ vector<string>
 
 including:
 
-* `push_back()`
-* Iterators
-* Range-based loops
-* Passing vectors by reference
+- `push_back()`
+- Iterators
+- Range-based loops
+- Passing vectors by reference
 
 ### File Handling
 
@@ -149,10 +149,10 @@ fstream
 
 Examples include:
 
-* Reading files
-* Writing files
-* Reading lines using `getline()`
-* Loading file data into vectors
+- Reading files
+- Writing files
+- Reading lines using `getline()`
+- Loading file data into vectors
 
 Example:
 
@@ -185,12 +185,12 @@ The repository also contains small console-based projects designed to combine mu
 
 A console game using:
 
-* Enums
-* Structs
-* Functions
-* Random numbers
-* Loops
-* Game statistics
+- Enums
+- Structs
+- Functions
+- Random numbers
+- Loops
+- Game statistics
 
 ### Math Game
 
@@ -198,31 +198,31 @@ A small console game that generates mathematical questions and evaluates the pla
 
 Practices:
 
-* Random numbers
-* Enums
-* Functions
-* Conditions
-* Loops
-* Input handling
+- Random numbers
+- Enums
+- Functions
+- Conditions
+- Loops
+- Input handling
 
 ### Guess Number
 
 A number guessing game that practices:
 
-* Random number generation
-* User input
-* Loops
-* Structs
-* Game statistics
-* Validation
+- Random number generation
+- User input
+- Loops
+- Structs
+- Game statistics
+- Validation
 
 ## 🛠️ Technologies
 
-* **C++**
-* Standard C++ Library
-* VS Code
-* Git
-* GitHub
+- **C++**
+- Standard C++ Library
+- VS Code
+- Git
+- GitHub
 
 ## 💻 Running the Exercises
 
@@ -280,13 +280,13 @@ This repository is continuously updated as I learn new C++ concepts.
 
 Future improvements may include:
 
-* More advanced algorithms
-* Object-Oriented Programming
-* STL
-* Modern C++
-* Better error handling
-* More refactoring
-* Larger console applications
+- More advanced algorithms
+- Object-Oriented Programming
+- STL
+- Modern C++
+- Better error handling
+- More refactoring
+- Larger console applications
 
 ## 📌 Note
 
