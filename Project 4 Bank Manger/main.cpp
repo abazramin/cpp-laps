@@ -254,6 +254,8 @@ bool DeleteClientByAccountNumber(string AccountNumber, vector<stClient> &vClient
                  << ") is Not Found!";
             return false;
       }
+
+      return false;
 }
 
 string ReadCleintAccountNumber()
@@ -317,6 +319,8 @@ bool UpdateClientByAccountNumber(string AccountNumber, vector<stClient> &vClient
                  << ") is Not Found!";
             return false;
       }
+
+      return false;
 }
 
 void UpdateClient()
