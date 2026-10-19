@@ -38,6 +38,7 @@ short ReadMonth()
       cin >> Month;
       return Month;
 }
+
 short ReadYear()
 {
       short Year;
