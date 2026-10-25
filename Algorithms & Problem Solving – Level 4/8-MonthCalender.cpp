@@ -50,7 +50,10 @@ void PrintMonthCalendar(short Month, short Year)
       int NumberOfDays;
       // Index of the day from 0 to 6
       int current = DayOfWeekOrder(1, Month, Year);
+      // current = 1 to 6
       NumberOfDays = NumberOfDaysInAMonth(Month, Year);
+      // number of day = 31 , 30
+
       // Print the current month name
       printf("\n _______________%s_______________\n\n",
              MonthShortName(Month).c_str());
@@ -63,6 +66,7 @@ void PrintMonthCalendar(short Month, short Year)
       for (int j = 1; j <= NumberOfDays; j++)
       {
             printf("%5d", j);
+            // add new line
             if (++i == 7)
             {
                   i = 0;

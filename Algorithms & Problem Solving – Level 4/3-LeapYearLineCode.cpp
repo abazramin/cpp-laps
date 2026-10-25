@@ -14,8 +14,7 @@ short ReadYears(string message)
 
 bool isLeapYear(short year)
 {
-      if (year % 400 == 0 && year % 100 != 0 || year % 4 == 0)
-            return true;
+      return (year % 400 == 0 && year % 100 != 0 || year % 4 == 0);
 }
 
 void RuninngCode()
@@ -33,7 +32,7 @@ void RuninngCode()
             }
             else
             {
-                  cout << "no , [ " << year << " ] is leap Year";
+                  cout << "no , [ " << year << " ] is not leap Year";
             }
 
             cout << "\ndo you wnat to try again ! [y]/[n] ? " << endl;

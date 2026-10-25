@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// black box
 short DayOfWeekOrder(short Day, short Month, short Year)
 {
       short a, y, m;

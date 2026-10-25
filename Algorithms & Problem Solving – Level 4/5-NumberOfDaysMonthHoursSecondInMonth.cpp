@@ -6,15 +6,19 @@ bool isLeapYear(short Year)
       return (Year % 4 == 0 && Year % 100 != 0) || (Year % 400 == 0);
 }
 
+// detirmind the days in month
 short NumberOfDaysInAMonth(short Month, short Year)
 {
       if (Month < 1 || Month > 12)
             return 0;
+
       if (Month == 2)
       {
             return isLeapYear(Year) ? 29 : 28;
       }
+
       short arr31Days[7] = {1, 3, 5, 7, 8, 10, 12};
+
       for (short i = 1; i <= 7; i++)
       {
             if (arr31Days[i - 1] == Month)
